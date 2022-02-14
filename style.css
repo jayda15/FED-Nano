@@ -1,8 +1,10 @@
+/* Full page styles */
 * {
   box-sizing: border-box;
   margin: 0 auto;
 }
 
+/* Mobile screen display */
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
