@@ -1,12 +1,42 @@
 /* Full page styles */
-* {
+body {
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-/* Mobile screen display */
+#head {
+  background-color: steelblue;
+  grid-column: 1 / -1;
+}
+
+#about {
+  background-color: aquamarine;
+}
+
+#posts {
+  background-color: orchid;
+  grid-column: 2 / -1;
+  padding: 2rem;
+}
+
+#social {
+  background-color: gray;
+  grid-column: 1 / -1;
+}
+
 .container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  /*grid-template-rows: ;*/
+  grid-gap: 5px;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 50em) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #posts {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
