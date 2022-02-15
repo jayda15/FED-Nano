@@ -9,6 +9,18 @@ body {
   grid-column: 1 / -1;
 }
 
+#nav {
+  background-color: goldenrod;
+  grid-column: 1 / -1;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
 #about {
   background-color: aquamarine;
 }
