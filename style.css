@@ -1,23 +1,48 @@
-/* Full page styles */
 body {
   box-sizing: border-box;
   margin: 0 auto;
   font-family: "Hind Manduri", sans-serif;
 }
 
+/* Background taken from https://projects.verou.me/css3patterns/#cross-dots all credit goes here*/
 #head {
-  background-color: steelblue;
+  background: radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(
+      45deg,
+      transparent 74px,
+      transparent 75px,
+      #a4a4a4 75px,
+      #a4a4a4 76px,
+      transparent 77px,
+      transparent 109px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 75px,
+      transparent 76px,
+      #a4a4a4 76px,
+      #a4a4a4 77px,
+      transparent 78px,
+      transparent 109px
+    ),
+    #fff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   grid-area: hd;
 }
 
 h1 {
   text-align: center;
+  color: #006992;
+  text-shadow: 2px 3px #8b8a8a;
   font-family: "Abril Fatface", serif;
-  font-size: 2.8rem;
+  font-size: 4.5rem;
 }
 
 #nav {
-  background-color: goldenrod;
+  background-color: rgba(182, 182, 182, 0.5);
   grid-area: nav;
 }
 
@@ -30,18 +55,32 @@ ul {
   padding-top: 0.5em;
 }
 
+a {
+  text-decoration: none;
+  color: #006992;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  text-transform: uppercase;
+}
+
 #about {
-  background-color: aquamarine;
+  background-color: #006992;
   grid-area: sd;
+  padding: 15px;
+  color: white;
 }
 
 #posts {
-  background-color: orchid;
   grid-area: main;
+  padding: 0 30px;
+  color: #006992;
 }
 
 #social {
-  background-color: gray;
+  background-color: rgba(182, 182, 182, 0.5);
   grid-area: foot;
 }
 
@@ -65,12 +104,6 @@ ul {
       "sd main main main main main"
       "sd foot foot foot foot foot";
   }
-
-  /*nav ul {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-  }*/
 
   #posts {
     display: grid;
