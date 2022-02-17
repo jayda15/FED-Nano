@@ -4,6 +4,34 @@ body {
   font-family: "Hind Manduri", sans-serif;
 }
 
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "hd"
+    "nav"
+    "sd"
+    "main"
+    "foot";
+}
+
+@media only screen and (min-width: 40em) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "sd hd hd hd hd hd"
+      "sd nav nav nav nav nav"
+      "sd main main main main main"
+      "sd foot foot foot foot foot";
+  }
+
+  #posts {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* Background taken from https://projects.verou.me/css3patterns/#cross-dots all credit goes here*/
 #head {
   background: radial-gradient(black 3px, transparent 4px),
@@ -31,6 +59,8 @@ body {
   background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   grid-area: hd;
+
+  border-bottom: 2px solid #006992;
 }
 
 h1 {
@@ -39,31 +69,6 @@ h1 {
   text-shadow: 2px 3px #8b8a8a;
   font-family: "Abril Fatface", serif;
   font-size: 4.5rem;
-}
-
-#nav {
-  background-color: rgba(182, 182, 182, 0.5);
-  grid-area: nav;
-}
-
-ul {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  list-style-type: none;
-  font-size: 1.2rem;
-  padding-top: 0.5em;
-}
-
-a {
-  text-decoration: none;
-  color: #006992;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-a:hover {
-  text-transform: uppercase;
 }
 
 #about {
@@ -75,39 +80,16 @@ a:hover {
 
 #posts {
   grid-area: main;
-  padding: 0 30px;
+  padding: 20px 40px;
   color: #006992;
 }
 
 #social {
-  background-color: rgba(182, 182, 182, 0.5);
   grid-area: foot;
 }
 
-.container {
-  display: grid;
-  height: 100vh;
-  grid-template-areas:
-    "hd"
-    "nav"
-    "sd"
-    "main"
-    "foot";
-}
-
-@media only screen and (min-width: 40em) {
-  .container {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-      "sd hd hd hd hd hd"
-      "sd nav nav nav nav nav"
-      "sd main main main main main"
-      "sd foot foot foot foot foot";
-  }
-
-  #posts {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
+.copyright {
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
 }
