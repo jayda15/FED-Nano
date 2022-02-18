@@ -34,15 +34,15 @@ body {
 
 /* Background taken from https://projects.verou.me/css3patterns/#cross-dots all credit goes here*/
 #head {
-  background: radial-gradient(black 3px, transparent 4px),
-    radial-gradient(black 3px, transparent 4px),
-    linear-gradient(#fff 4px, transparent 0),
+  background: radial-gradient(#99fff0 3px, transparent 4px),
+    radial-gradient(#006992 3px, transparent 4px),
+    linear-gradient(rgb(255, 255, 255) 4px, transparent 0),
     linear-gradient(
       45deg,
       transparent 74px,
       transparent 75px,
-      #a4a4a4 75px,
-      #a4a4a4 76px,
+      #0f0f0f 75px,
+      #0f0f0f 76px,
       transparent 77px,
       transparent 109px
     ),
@@ -50,25 +50,25 @@ body {
       -45deg,
       transparent 75px,
       transparent 76px,
-      #a4a4a4 76px,
-      #a4a4a4 77px,
+      #0f0f0f 76px,
+      #0f0f0f 77px,
       transparent 78px,
       transparent 109px
     ),
-    #fff;
+    rgb(255, 254, 254);
   background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  grid-area: hd;
 
+  grid-area: hd;
   border-bottom: 2px solid #006992;
 }
 
 h1 {
   text-align: center;
   color: #006992;
-  text-shadow: 2px 3px #8b8a8a;
+  text-shadow: 2px 3px #a7a7a7;
   font-family: "Abril Fatface", serif;
-  font-size: 4.5rem;
+  font-size: 5.2em;
 }
 
 #about {
@@ -94,9 +94,13 @@ h1 {
   text-align: center;
 }
 
+.email {
+  padding: 3px 5px;
+}
+
 .btn {
   margin-top: 5px;
-  padding: 6px 8px;
+  padding: 4px 9px;
   color: #3a3a3a;
   font-size: 0.8rem;
   background-color: #99fff0;
