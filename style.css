@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   font-family: "Hind Manduri", sans-serif;
 }
 
@@ -68,7 +68,7 @@ h1 {
   color: #006992;
   text-shadow: 2px 3px #a7a7a7;
   font-family: "Abril Fatface", serif;
-  font-size: 5.2em;
+  font-size: 5.2rem;
 }
 
 #about {
@@ -78,15 +78,19 @@ h1 {
   color: white;
 }
 
+#about h2 {
+  font-size: 2rem;
+}
+
 .btw {
   font-size: 0.8em;
-  margin-top: 4em;
+  margin-top: 3rem;
 }
 
 .email-sub {
   color: #99fff0;
   font-size: 0.8rem;
-  text-indent: 1.8em;
+  text-indent: 1.8rem;
 }
 
 .sub-form {
@@ -107,11 +111,33 @@ h1 {
   border: 2px solid #fff;
   text-transform: uppercase;
   font-weight: 600;
+  cursor: pointer;
 }
 
 #posts {
   grid-area: main;
   padding: 20px 40px;
+  color: #006992;
+}
+
+.post-link,
+.post-link:active,
+.post-link:visited,
+.post-link:link {
+  text-decoration: none;
+  color: #006992;
+}
+
+.post-link:hover {
+  text-transform: uppercase;
+  font-style: italic;
+  color: #006992;
+  text-shadow: 2px 2px #a7a7a7;
+}
+
+.post-link:active,
+.post-link:visited,
+..post-link:link {
   color: #006992;
 }
 
