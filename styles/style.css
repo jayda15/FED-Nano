@@ -141,12 +141,21 @@ h1 {
   color: #006992;
 }
 
-#social {
+#foot {
   grid-area: foot;
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 
 .copyright {
   font-size: 0.8rem;
   font-style: italic;
-  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 100px;
 }

@@ -13,20 +13,20 @@ body {
   width: 80%;
 }
 
-article {
+.card-post {
   width: 50%;
   text-align: center;
   margin: auto;
   padding-top: 6%;
 }
 
-h2 {
+.card-post-head {
   font-family: "Abril Fatface", serif;
   font-size: 3rem;
   text-align: center;
 }
 
-p {
+.card-post-text {
   font-family: "Hind Madurai", sans-serif;
   line-height: 2rem;
 }
