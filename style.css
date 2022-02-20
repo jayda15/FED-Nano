@@ -55,7 +55,7 @@ body {
       transparent 78px,
       transparent 109px
     ),
-    rgb(255, 254, 254);
+    rgb(254, 254, 254);
   background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 
@@ -63,7 +63,7 @@ body {
   border-bottom: 2px solid #006992;
 }
 
-h1 {
+.title-txt {
   text-align: center;
   color: #006992;
   text-shadow: 2px 3px #a7a7a7;
@@ -75,11 +75,11 @@ h1 {
   background-color: #006992;
   grid-area: sd;
   padding: 15px;
-  color: white;
+  color: #fff;
 }
 
-#about h2 {
-  font-size: 2rem;
+.about-title {
+  font-size: 2.25rem;
 }
 
 .btw {
