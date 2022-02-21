@@ -18,9 +18,19 @@ body {
 }
 
 .post-wrap {
-  width: 50%;
+  width: 60%;
   text-align: center;
   margin: auto;
+  padding: 3em;
+}
+
+/* photos from https://www.pexels.com/search/dinner/ all credit goes here */
+.post-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 2px 3px 4px #838383;
+  border-radius: 5px;
 }
 
 .post-txt {
@@ -48,15 +58,12 @@ body {
     display: flex;
     flex-direction: column;
   }
-
-  .author-img {
-    display: none;
-  }
 }
 
 .author-img {
-  height: 35%;
-  width: 30%;
+  width: 50%;
+  max-width: 360px;
+  height: auto;
 }
 
 .author-name {
