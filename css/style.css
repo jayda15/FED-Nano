@@ -1,3 +1,9 @@
+/* imported styles */
+@import url("author-styles.css");
+@import url("main-post-styles.css");
+@import url("post-social-styles.css");
+@import url("post-footer-styles.css");
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -141,6 +147,14 @@ body {
   color: #006992;
 }
 
+.post-image {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 2px 3px 4px #838383;
+  border-radius: 5px;
+}
+
 #foot {
   grid-area: foot;
   display: flex;
@@ -153,9 +167,14 @@ body {
   font-style: italic;
 }
 
-.social-links {
+.main-social-links {
   display: flex;
   position: absolute;
   top: 8px;
-  right: 100px;
+  right: 15px;
+}
+
+.main-social-link {
+  width: 1.5em;
+  height: auto;
 }

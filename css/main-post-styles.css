@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.post-title {
+  margin-top: 0;
+  padding: 1em;
+  font-family: "Abril Fatface", serif;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #006992;
+  color: rgb(245, 245, 245);
+}
+
+.post-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding: 3em;
+}
+
+/* photos from https://www.pexels.com/search/dinner/ all credit goes here */
+.post-img {
+  width: 100%;
+  max-width: 600px;
+  min-width: 200px;
+  height: auto;
+  box-shadow: 2px 3px 4px #838383;
+  border-radius: 5px;
+}
+
+.post-txt {
+  font-family: "Hind Madurai", sans-serif;
+  line-height: 2rem;
+}

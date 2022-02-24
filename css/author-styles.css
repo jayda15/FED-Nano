@@ -1,0 +1,36 @@
+.author-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-info {
+  display: flex;
+  width: 55%;
+  margin: 2em 0;
+  padding: 2em;
+  border: 2px solid rgb(136, 136, 136);
+  box-shadow: 4px 5px 4px rgb(172, 172, 172);
+}
+
+@media (max-width: 60em) {
+  .author-info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .author-img {
+    min-width: 130px;
+  }
+}
+
+.author-img {
+  width: 50%;
+  max-width: 360px;
+  height: auto;
+}
+
+.author-name {
+  padding: 0 1em;
+}

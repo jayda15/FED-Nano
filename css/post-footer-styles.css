@@ -1,0 +1,21 @@
+/* images from <a href="https://pixabay.com/">Pixabay</a> */
+.post-footer {
+  background-color: #006992;
+}
+
+.navigation {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+}
+
+.nav-link {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 1.2rem;
+  color: #7ffae7;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-transform: uppercase;
+}
